@@ -1,6 +1,12 @@
 <template>
-    <div class="search">
-        <input type="text" class="" placeholder="Search by name" @keyup="filter()" v-model="name">
+    <div class="search mb-4">
+        <input
+            type="text"
+            class="form-control form-control-sm"
+            placeholder="Search by name"
+            @keyup="filter()"
+            v-model="name"
+        />
     </div>
 </template>
 <script>

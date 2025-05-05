@@ -1,7 +1,7 @@
 <template>
     <section>
-        <div class="characters">
-            <div class="character__item" v-for="character in characters" :key="character.id">
+        <div class="characters d-flex flex-wrap justify-content-around align-items-center">
+            <div class="character__item mb-3" v-for="character in characters" :key="character.id">
                 <card-character :character="character" />
             </div>
         </div>

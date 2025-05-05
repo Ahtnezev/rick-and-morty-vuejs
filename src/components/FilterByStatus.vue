@@ -1,8 +1,12 @@
 <template>
-    <div class="item" @click="filter('')">All</div>
-    <div class="item" @click="filter('Alive')">Alive</div>
-    <div class="item" @click="filter('Dead')">Dead</div>
-    <div class="item" @click="filter('unknown')">Unknown</div>
+    <div class="container d-flex align-items-center justify-content-start">
+        <div class="btn-group" role="group" aria-label="basic sample">
+            <button type="button" class="btn btn-outline-info" @click="filter('')">All</button>
+            <button type="button" class="btn btn-outline-info" @click="filter('Alive')">Alive</button>
+            <button type="button" class="btn btn-outline-info" @click="filter('Dead')">Dead</button>
+            <button type="button" class="btn btn-outline-info" @click="filter('unknown')">Unknown</button>
+        </div>
+    </div>
 </template>
 <script>
 import { useStore } from 'vuex';

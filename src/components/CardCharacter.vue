@@ -1,9 +1,9 @@
 <template>
     <div class="character">
-        <img :src="character.image" :alt="character.name">
+        <img :src="character.image" class="img-fluid rounded-3" :alt="character.name">
         <div class="character__info">
             {{ character.name }}
-            <div class="status">
+            <div class="status d-flex align-items-center">
                 <span
                     :class="character.status == 'Alive' ? 'alive' : character.status == 'Dead' ? 'dead' : 'default'"
                     ></span>
